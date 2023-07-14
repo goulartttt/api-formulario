@@ -9,7 +9,7 @@ module.exports = (express) => {
 
     route.post('/cepRestritos', controllers.cepRestritos)
 
-    route.post('/cotacoes', controllers.cotacoes )
+    route.post('/salvarCotacoes', controllers.cotacoes )
 
     return route
 

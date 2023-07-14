@@ -6,7 +6,7 @@ const cotacoes = new Schema({
     nome:{type: String, required: true },
     coberturas: {type: Object, required: true},
     cpf:{type:String, required:true},
-    endereço:{type:Object, required:true},
+    endereco:{type:Object, required:true},
     valorPremio:{type: Number, required:true}
 })  
 
