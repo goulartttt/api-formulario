@@ -25,7 +25,6 @@ const controllers = {
     coberturas:async (req, res) =>{
         try {
             const coberturas = await coberturasModel.find({})
-            
             res.json({success: true, coberturas:coberturas})
         } catch (error) {
             res.status(400).json({success: false, msg: error})
@@ -56,6 +55,7 @@ const controllers = {
             await cotacao.save()
             res.json({success: true, msg:"Cotação salva com sucesso"})
         } catch (error) {
+            console.log(error)
             res.status(400).json({success: false, msg:"Erro ao salvar cotação"})
         }
         

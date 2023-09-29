@@ -9,7 +9,7 @@ const cotacoes = new Schema({
     endereco:{type:Object, required:true},
     valorPremio:{type: Number, required:true},
     inicioVigencia:{type: String, required:true},
-    fimVigencia:{type: String, required:true},
+    fimVigencia:{type: String, required:true}
 })  
 
 module.exports = mongoose.model('cotacoes', cotacoes);
